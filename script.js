@@ -14,7 +14,6 @@ function loadJSON(callback) {
 function init() {
   loadJSON(function (response) {
     var data = JSON.parse(response).data;
-    console.log(data);
     var x_values = data.map((line) => line[0]);
     var y_values = data.map((line) => line[1]);
     var chartData = {
