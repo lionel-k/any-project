@@ -15,7 +15,9 @@ function init() {
   loadJSON(function (response) {
     var data = JSON.parse(response).data;
     var x_values = data.map((line) => line[0]);
+    console.log(x_values)
     var y_values = data.map((line) => line[1]);
+    console.log(y_values)
     var chartData = {
       labels: x_values,
       datasets: [
